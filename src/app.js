@@ -3,7 +3,6 @@ const app = express();
 require("dotenv").config();
 const server = require("http").createServer(app);
 const PORT = process.env.PORT || 8001;
-const path = require("path");
 require("./service/socketService")(server);
 require("./database/db");
 app.use(express.json());
